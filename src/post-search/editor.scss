@@ -1,0 +1,99 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+	.dmg {
+		&-read-more {	
+			a {
+				color: var(--wp-admin-theme-color);
+				text-decoration: underline;
+			}
+		}
+
+		&-settings {
+			&__input {
+				align-items: flex-start;
+				flex-wrap: wrap;
+
+				&:first-child {
+					flex: 1;
+				}
+
+				&:last-child {
+					margin-bottom: .5rem;
+				}
+
+				&-wrap {
+					position: relative;
+
+					svg {
+						position: absolute;
+						right: .2rem;
+						top: .5rem;
+						cursor: pointer;
+
+						path {
+							fill: var(--wp-admin-theme-color);
+						}
+					}
+				}
+
+				.components-base-control__field {
+					margin: 0;
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			&__results {
+				flex-direction: column;
+				align-items: flex-start;
+
+				h3 {
+					margin: 0;
+				}
+
+				ul {
+					margin: 0 0 .5rem;
+				}
+			}
+
+			&__posts{
+				li {
+					border-bottom: 1px solid #c3c4c7;
+					padding: .5rem;
+					color: var(--wp-admin-theme-color);
+					cursor: pointer;
+
+					&:last-child {
+						border: none;
+					}
+				}
+			}
+
+			&__pagination {
+				display: flex;
+				flex-wrap: wrap;
+
+				li {
+					display: flex;
+					padding: 0 .75rem;
+
+					&:not(.active) {
+						color: var(--wp-admin-theme-color);
+						cursor: pointer;
+					}
+
+					&.active {
+						pointer-events: none;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
