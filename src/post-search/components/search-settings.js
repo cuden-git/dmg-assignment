@@ -18,7 +18,9 @@ const SearchSettings = ({ attributes, setAttributes }) => {
   const [idSearch, setIDSearch] = useState(false);
   const perPage = 10;
   const postArgs = {
-    perPage: perPage
+    perPage: perPage,
+    orderby: 'date',
+    order: 'desc'
   };
 
   useEffect(() => {
