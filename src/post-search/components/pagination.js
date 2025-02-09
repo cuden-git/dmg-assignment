@@ -12,7 +12,7 @@ const Pagination = ({ totalPages, perPage }) => {
   const maxVisiblePages = 7;
 
   const currentPage = requestOffset / perPage + 1;
-  console.log("component: PostsList");
+
   function pageItems() {
     let pages = [];
 

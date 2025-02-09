@@ -15,7 +15,6 @@ const SearchInput = ({ onChange }) => {
   useEffect(() => {
     setSearchTerm('');
   }, [inputVal]);
-  console.log("component: SearchInput");
 
   return (
     <>

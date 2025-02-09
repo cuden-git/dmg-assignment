@@ -9,8 +9,6 @@ import { SettingsContext } from './search-settings';
 const PostsList = ({ posts, resolved }) => {
   const { setAttributes, attributes } = useContext(SettingsContext);
 
-  console.log("component: PostsList");
-  console.log('Posts =', posts);
   return (
     <>
       <h3>Results</h3>

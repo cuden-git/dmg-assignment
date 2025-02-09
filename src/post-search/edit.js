@@ -33,11 +33,10 @@ import SearchSettings from './components/search-settings';
 import Output from './components/output';
 
 export default function Edit(props) {
-	console.log('Edit props', props);
 	const { attributes, setAttributes } = props;
 	const { foundURL, foundTitle } = attributes;
 	const blockProps = useBlockProps();
-	console.log("component: Edit");
+	
 	return (
 		<div {...blockProps}>
 			<Output url={foundURL} title={foundTitle} />
