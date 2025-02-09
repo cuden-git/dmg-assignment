@@ -1,3 +1,7 @@
+/**
+ * Component that provides the search text field
+ * @since 1.0.0
+ */
 import { useState, useContext, useEffect } from 'react';
 import { TextControl, Button, CheckboxControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
@@ -22,19 +26,19 @@ const SearchInput = ({ onChange }) => {
           __next40pxDefaultSize
           onChange={val => setInputVal(val)}
         />
-        <Icon 
-          icon={closeSmall} 
-          onClick={() => setInputVal('') }
+        <Icon
+          icon={closeSmall}
+          onClick={() => setInputVal('')}
         />
       </div>
       <Button
         variant="primary"
-        onClick={() => setSearchTerm(inputVal) }
+        onClick={() => setSearchTerm(inputVal)}
       >
         {__("Find")}
       </Button>
       <CheckboxControl
-        label="ID search"
+        label={__("ID search")}
         onChange={() => setIDSearch(!idSearch)}
         className="dmg-settings__input-cb"
       />

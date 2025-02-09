@@ -21,10 +21,6 @@
 					flex: 1;
 				}
 
-				&:last-child {
-					margin-bottom: .5rem;
-				}
-
 				&-wrap {
 					position: relative;
 
@@ -38,6 +34,10 @@
 							fill: var(--wp-admin-theme-color);
 						}
 					}
+				}
+
+				&-cb {
+					margin-bottom: .5rem;
 				}
 
 				.components-base-control__field {

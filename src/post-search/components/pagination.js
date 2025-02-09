@@ -1,3 +1,8 @@
+/**
+ * Component used to paginate posts results
+ * @since 1.0.0
+ */
+
 import { useContext } from "react";
 import { Icon, chevronLeft, chevronRight } from "@wordpress/icons";
 import { SettingsContext } from "./search-settings";

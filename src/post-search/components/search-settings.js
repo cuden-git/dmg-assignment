@@ -1,3 +1,7 @@
+/**
+ * Component providing the block's settings
+ * @since 1.0.0
+ */
 import { useState, useEffect, createContext } from 'react';
 import { InspectorControls } from "@wordpress/block-editor";
 import { PanelBody, PanelRow, Spinner } from "@wordpress/components";
@@ -32,13 +36,13 @@ const SearchSettings = ({ attributes, setAttributes }) => {
   }
 
   console.log('postArgs', postArgs);
-  const { hasResolved, records: posts, totalPages, totalItems, status } = useEntityRecords('postType', 'post', postArgs);
+  const { hasResolved, records: posts, totalPages, status } = useEntityRecords('postType', 'post', postArgs);
   console.log('useEntityRecords data', status);
 
   console.log("component: SearchSettings");
 
   return (
-    <SettingsContext.Provider value={{ attributes, setAttributes, setRequestOffset, requestOffset, searchTerm, setSearchTerm, idSearch, setIDSearch}}>
+    <SettingsContext.Provider value={{ attributes, setAttributes, setRequestOffset, requestOffset, searchTerm, setSearchTerm, idSearch, setIDSearch }}>
       <InspectorControls>
         <PanelBody title="Search">
           <PanelRow className="dmg-settings__input">

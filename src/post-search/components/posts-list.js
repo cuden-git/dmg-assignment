@@ -1,3 +1,8 @@
+/**
+ * Component used to list found posts
+ * @since 1.0.0
+ */
+
 import { useContext } from 'react';
 import { SettingsContext } from './search-settings';
 

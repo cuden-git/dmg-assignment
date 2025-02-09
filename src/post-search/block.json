@@ -4,7 +4,7 @@
 	"name": "dmg/post-search",
 	"version": "0.1.0",
 	"title": "Post Search",
-	"category": "widgets",
+	"category": "dmg-blocks",
 	"icon": "search",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
